@@ -1,0 +1,34 @@
+---
+layout: default
+title: Product
+---
+
+<!-- product notification sale|timer|warning -->
+
+<!-- product -->
+<div class="m_product">
+  <div class="product__image xsmall-24 medium-12 fleft">
+  </div>
+  <div class="product__content xsmall-24 medium-12 fleft">
+    <div class="product__title">
+    </div>
+    <div class="product__price">
+    </div>
+    <div class="product__option">
+    </div>
+    <div class="product__add xsmall-24">
+      <a href="#!" class="button xsmall-24 center">Add To Cart</a>
+    </div>
+  </div>
+</div>
+
+<!-- product attribute like description|quality|shipping|quantity|size chart -->
+{{#parseJSON '{
+  "img": "http://placehold.it/150x150",
+  "title": "title",
+  "copy": "copy"
+}'}}
+{{> product-attr }}
+{{/parseJSON}}
+
+<!-- product recommendations -->

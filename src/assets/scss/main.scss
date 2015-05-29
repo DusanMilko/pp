@@ -1,0 +1,36 @@
+@import 'libs/normalize';
+
+//Mixins
+@import 'mixins';
+
+//Fonts
+@import 'fonts';
+@import 'foundation-icons';
+//TODO: Load custom font when made
+//@import 'icon-font';
+
+//Foundation
+@import 'libs/foundation/settings';
+@import 'libs/foundation';
+
+@import 'libs/owl.carousel';
+
+//Variables
+@import 'variables';
+
+//Docs
+@import 'docs';
+@import 'libs/highlight';
+
+//Type Styles
+@import 'typography';
+
+//Global Styles
+@import 'global';
+
+//Other
+@import 'elements/*.scss'
+@import 'modules/*.scss'
+@import 'layout/*.scss'
+@import 'pages/*.scss'
+@import 'theme/*.scss'
