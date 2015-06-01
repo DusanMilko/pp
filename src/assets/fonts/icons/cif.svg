@@ -7,8 +7,11 @@
       units-per-em="512" ascent="512"
       descent="0" />
     <missing-glyph horiz-adv-x="0" />
-    <glyph glyph-name="prev"
+    <glyph glyph-name="next"
       unicode="&#xE001;"
+      horiz-adv-x="512" d=" M256 0H128L256 256L128 512H256L384 256L256 0z" />
+    <glyph glyph-name="prev"
+      unicode="&#xE002;"
       horiz-adv-x="512" d=" M128 256L256 512H384L256 256L384 0H256L128 256z" />
   </font>
 </defs>

@@ -1,0 +1,286 @@
+.navigation {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 26px;
+  left: 0;
+  z-index: 10;
+  background: $white;
+  box-shadow: 0px 0px 1px $oil;
+}
+
+.burger-menu {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-right: 1px solid $silver;
+  position: relative;
+  padding: 10px 12px;
+
+  @media #{$large-up}{
+    display: none;
+  }
+
+  .buns {
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    span {
+      width: 100%;
+      height: 4px;
+      background: $oil;
+      float: left;
+      position: absolute;
+      top: 40%;
+
+      &.first {
+        margin-top: -8px;
+      }
+      &.middle {
+        margin-top: -2px;
+      }
+      &.last {
+        margin-top: 4px;
+      }
+      &.text {
+        height: auto;
+        font-size: 9px;
+        color: $oil;
+        background: none;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.nav-logo {
+  height: 50px;
+  float: left;
+  text-decoration: none;
+  padding: 0 0 0 15px;
+  border-right: 1px solid $silver;
+  border-left: 1px solid $silver;
+
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+
+  @media #{$small-up}{
+    border-left: 0px solid $silver;
+    position: relative;
+    transform: translateX(0%);
+    left: 0%;
+  }
+
+  img {
+    float: left;
+    width: 20px;
+    margin-top: 9px;
+  }
+
+  h1 {
+    font-size: 34px;
+    text-transform: uppercase;
+    font-family: "Arial", "Helvetica";
+    color: $oil;
+    font-weight: bold;
+    letter-spacing: -0.09em;
+    margin: 0;
+    padding: 5px 15px 0 0;
+    float: left;
+    text-indent: -9999em;
+
+    @media #{$small-up}{
+      text-indent: 0;
+    }
+  }
+
+  &:hover {
+    h1 {
+      color: $black;
+    }
+  }
+}
+
+.main-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  display: none;
+
+  @media #{$large-up}{
+    display: block;
+  }
+
+  li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    float: left;
+    border-right: 1px solid $silver;
+
+    a {
+      float: left;
+      padding: 15px 20px 0px;
+      height: 50px;
+      text-decoration: none;
+      color: $oil;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $black;
+        background: $white-smoke;
+      }
+    }
+  }
+}
+
+.nav-accounts-mobile {
+  float: left;
+  color: $oil;
+  font-size: 24px;
+  padding: 5px 15px 0px;
+  height: 50px;
+  border-left: 1px solid $silver;
+
+  i {
+    text-align: center;
+  }
+
+  span {
+    font-size: 9px;
+    float: left;
+    margin-top: -10px;
+  }
+
+  &:hover {
+    color: $black;
+    background: $white-smoke;
+  }
+}
+
+.nav-accounts {
+  color: $charcoal;
+  font-size: 13px;
+  padding: 15px 15px 0px 0px;
+  height: 50px;
+  float: left;
+
+  a {
+    color: $oil;
+  }
+}
+
+.nav-cart {
+  height: 50px;
+  font-size: 24px;
+  color: $oil;
+  text-decoration: none;
+  border-left: 1px solid $silver;
+  float: right;
+  padding: 5px 15px 0px;
+
+  @media #{$small-up}{
+    padding: 8px 15px 0px;
+  }
+
+  i {
+    float: left;
+  }
+
+  span {
+    font-size: 9px;
+    float: left;
+    clear: both;
+    padding: 0;
+    margin-top: -10px;
+    text-align: center;
+    width: 100%;
+
+    @media #{$small-up}{
+      display: block;
+      padding-left: 10px;
+      padding-top: 8px;
+      margin-top: 0px;
+      width: auto;
+      clear: none;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+  &:hover {
+    color: $black;
+    background: $white-smoke;
+  }
+}
+
+// Sub navigation
+
+.sub-navigation {
+  width: 100%;
+  background: $iron;
+  float: left;
+  display: none;
+
+  @media #{$medium-up}{
+    display: block;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0 0 0 10px;
+    list-style: none;
+
+    li {
+      display: inline;
+      float: left;
+      position: relative;
+
+      &.is-active {
+        //background: scale-color(#E0D4C1, $lightness: 30%);
+
+        &:before {
+          content: " ";
+          border-bottom: 10px solid #f1f1f1;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          margin-left: -10px;
+        }
+      }
+
+      a {
+        padding: 15px 10px;
+        color: $oil;
+        float: left;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Alert 
+
+.alert {
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  height: 26px;
+  text-align: center;
+  width: 100%;
+  background: #F21D41;
+
+  p {
+    margin: 0;
+    padding: 3px 0 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: $white;
+  }
+}

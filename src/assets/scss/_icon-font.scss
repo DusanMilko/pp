@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-.cif-prev:before,  .icons-cif:before { display: inline-block;
+.cif-next:before, .cif-prev:before,  .icons-cif:before { display: inline-block;
   font-family: "cif";
   font-style: normal;
   font-weight: normal;
@@ -35,4 +35,5 @@
   text-decoration: inherit; 
 }
 
-.cif-prev:before { content: "\E001" }
+.cif-next:before { content: "\E001" }
+.cif-prev:before { content: "\E002" }

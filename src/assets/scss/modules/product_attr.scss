@@ -1,6 +1,10 @@
 .m_product-attr {
-  padding: 50px 0;
+  padding: 30px 0;
   position: relative;
+
+  @media #{$medium-up}{
+    padding: 50px 0;
+  }
 
   &.is-image-right {
     .product-attr__image-cont {
@@ -57,11 +61,15 @@
 
 .product-attr__content {
   float: right;
-  padding: 0 40px;
+  padding: 20px 30px 0;
+
+  @media #{$medium-up}{
+    padding: 0px 40px 0;
+  }
 }
 
 .product-attr__title {
-
+  font-size: 24px;
 }
 
 .product-attr__copy {

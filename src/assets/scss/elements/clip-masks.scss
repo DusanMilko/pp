@@ -1,17 +1,17 @@
 @media #{$medium-up}{
   .trapezoid-left {
-    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
-    padding-top: 1%;
-    padding-bottom: 2%;
-    margin-top: -2%;
+    clip-path: polygon(0 0, 100% 15px, 100% 100%, 0% 100%);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-top: -15px;
     position: relative;
   }
 
   .trapezoid-right {
-    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
-    padding-top: 1%;
-    padding-bottom: 2%;
-    margin-top: -2%;
+    clip-path: polygon(0 15px, 100% 0%, 100% 100%, 0% 100%);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-top: -15px;
     position: relative;
   }
 
