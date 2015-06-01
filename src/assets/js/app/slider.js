@@ -25,7 +25,7 @@ module.exports = function() {
     loop: false,
     margin: 0,
     nav: true,
-    navText: ["<i class='icon fi-arrow-left'></i>","<i class='icon fi-arrow-right'></i>"],
+    navText: ["<i class='icon cif-prev'></i>","<i class='icon cif-prev'></i>"],
     responsive:{
         0:{
             items:1

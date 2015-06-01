@@ -16,6 +16,7 @@
     height: 100%;
     background: rgba(255,255,255,0.5);
     width: 30px;
+    font-size: 30px;
 
     &.is-disabled {
       display: none!important;
@@ -34,14 +35,15 @@
     right: 0px;
 
     .icon {
-      right: 9px;
+      right: 0px;
+      transform: rotate(180deg);
     }
   }
   .owl-prev {
     left: 0px;
 
     .icon {
-      left: 9px;
+      left: 0px;
     }
   }
 }
@@ -88,7 +90,7 @@
       }
 
       a {
-        padding: 10px 0;
+        padding: 10px 0 8px;
         width: 100%;
         text-align: center; 
         float: left;
