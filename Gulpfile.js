@@ -72,14 +72,14 @@ gulp.task('iconfont', function(){
   var lodash = require('lodash');
 
   gulp.src(['src/assets/icons/svgs/*.svg'])
-    .pipe(iconfont({ fontName: 'custom-icon-font' }))
+    .pipe(iconfont({ fontName: 'cif' }))
     .on('codepoints', function(codepoints, options) {
       gulp.src('src/assets/icons/_icon-font.css')
         .pipe(consolidate('lodash', {
           glyphs: codepoints,
-          fontName: 'custom-icon-font',
+          fontName: 'cif',
           fontPath: '../fonts/icons/',
-          className: 'i'
+          className: 'cif'
         }))
         .pipe(rename(function (path) {
           path.extname = ".scss"
@@ -223,5 +223,5 @@ gulp.task('watch', function() {
   gulp.watch('src/views/**/*.hbs', ['assemble']);
   gulp.watch('src/assets/scss/**/*.scss', ['css']);
   gulp.watch('src/assets/js/**/*.js', ['js']);
-  gulp.watch('src/assets/imgs/**/*.{jpg,png}', ['images']);
+  gulp.watch('src/assets/imgs/**/*.{jpg,png,svg}', ['images']);
 });

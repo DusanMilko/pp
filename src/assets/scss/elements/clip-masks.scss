@@ -1,0 +1,25 @@
+@media #{$medium-up}{
+  .trapezoid-left {
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin-top: -2%;
+    position: relative;
+  }
+
+  .trapezoid-right {
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin-top: -2%;
+    position: relative;
+  }
+
+  .trapezoid-unpadded {
+    padding: 0;
+  }
+}
+
+.circle {
+  clip-path: circle(50% at 50% 50%);
+}

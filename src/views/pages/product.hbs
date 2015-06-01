@@ -6,29 +6,161 @@ title: Product
 <!-- product notification sale|timer|warning -->
 
 <!-- product -->
-<div class="m_product">
-  <div class="product__image xsmall-24 medium-12 fleft">
-  </div>
-  <div class="product__content xsmall-24 medium-12 fleft">
-    <div class="product__title">
+<div class="container">
+  <div class="row">
+
+    <div class="m_product">
+      <div class="product__image xsmall-24 medium-12 fleft">
+        <div class="product-carousel">
+          <img class="item" src="http://shop.panicpop.com/image/cache/data/thug_4-450x600.jpg"/>
+          <img class="item" src="http://shop.panicpop.com/image/cache/data/thug_33-450x600.jpg"/>
+          <img class="item" src="http://shop.panicpop.com/image/cache/data/thug2-450x600.jpg"/>
+        </div>
+      </div>
+      <div class="product__content xsmall-24 medium-12 fleft">
+        <h1 class="product__title">
+          Buy A Ward
+        </h1>
+        <div class="product__price">
+          $17.99
+        </div>
+        <div class="product__note">
+          Unisex sizing fits both Male and Female. Printed on American Apparel.
+        </div>
+        <div class="product__option">
+          <ul class="xsmall-block-grid-5 js-product-option">
+            <li>
+              <a href="#!">XS</a>
+            </li>
+            <li>
+              <a href="#!">S</a>
+            </li>
+            <li>
+              <a href="#!">M</a>
+            </li>
+            <li>
+              <a href="#!">L</a>
+            </li>
+            <li>
+              <a href="#!">XL</a>
+            </li>
+          </ul>
+        </div>
+        <div class="product__add xsmall-24">
+          <a href="#!" class="button button--color button--filled xsmall-24 center">Add To Cart</a>
+        </div>
+      </div>
     </div>
-    <div class="product__price">
-    </div>
-    <div class="product__option">
-    </div>
-    <div class="product__add xsmall-24">
-      <a href="#!" class="button xsmall-24 center">Add To Cart</a>
-    </div>
+
   </div>
 </div>
 
 <!-- product attribute like description|quality|shipping|quantity|size chart -->
+<div class="container bg-green-black">
+  <div class="row">
 {{#parseJSON '{
-  "img": "http://placehold.it/150x150",
-  "title": "title",
-  "copy": "copy"
+  "extra-class": "bg-green",
+  "type": "half",
+  "title": "Description",
+  "copy": "<p>An important lesson for League of Legends is \"buy a ward save a life\"! But noobs don\'t know, make sure they learn.</p>"
 }'}}
 {{> product-attr }}
 {{/parseJSON}}
+
+{{#parseJSON '{
+  "extra-class": "bg-black is-profile light",
+  "img": "http://a1.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTE4MDAzNDEwNzQzMTY2NDc4.jpg",
+  "type": "half",
+  "title": "Designer",
+  "copy": "<p>This awesome design was created by <a href=\"#!\">Will Smith</a></p>"
+}'}}
+{{> product-attr }}
+{{/parseJSON}}
+  </div>
+</div>
+
+<div class="container bg-fone bg-sizechart trapezoid-left trapezoid-unpadded">
+  <div class="row">
+{{#parseJSON '{
+  "extra-class": "is-fitted-image",
+  "img": "/assets/imgs/size-chart.jpg",
+  "title": "Size Chart",
+  "copy": "<p><strong>Chest:</strong></br>Measure under arms around the fullest part of the chest. Be sure to keep tape level across back and comfortably loose.</p><p><strong>Waist:</strong></br>Measure around natural waist with a measuring tape.</p><table><thead><tr><td>Size (US)</td><td>Chest (inches)</td><td>Waist(inches)</td></tr></thead><tbody><tr><td>xxs</td><td>1</td><td>8</td></tr><tr><td>xs</td><td>2</td><td>9</td></tr><tr><td>s</td><td>3</td><td>10</td></tr><tr><td>m</td><td>4</td><td>11</td></tr><tr><td>l</td><td>5</td><td>12</td></tr><tr><td>xl</td><td>6</td><td>13</td></tr><tr><td>xxl</td><td>7</td><td>14</td></tr></tbody></table>"
+}'}}
+{{> product-attr }}
+{{/parseJSON}}
+  </div>
+</div>
+
+<!--
+<table>
+    <tr>
+        <td>size (us)</td>
+        <td>chest (inches)</td>
+        <td>waist(inches)</td>
+    </tr>
+    <tr>
+        <td>xxs</td>
+        <td>1</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>xs</td>
+        <td>2</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>s</td>
+        <td>3</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>m</td>
+        <td>4</td>
+        <td>11</td>
+    </tr>
+    <tr>
+        <td>l</td>
+        <td>5</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>xl</td>
+        <td>6</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td>xxl</td>
+        <td>7</td>
+        <td>14</td>
+    </tr>
+</table>
+-->
+
+<div class="container bg-oil light trapezoid-right">
+  <div class="row">
+{{#parseJSON '{
+  "img": "/assets/imgs/plane.svg",
+  "title": "Shipping",
+  "copy": "<p>All orders are processed &amp; shipped out within the first week.</p> </br><strong>Domestic</strong> <ul><li>Standard delivery $2.95 (3-5 days)</li><li>Free standard delivery on orders over $100.00</li></ul> </br><strong>International</strong> </br><ul><li>Standard delivery $4.95 (7-10 days)</li><li>Free standard delivery on orders over $100.00</li></ul>"
+}'}}
+{{> product-attr }}
+{{/parseJSON}}
+  </div>
+</div>
+
+<div class="container bg-white">
+  <div class="row">
+{{#parseJSON '{
+  "extra-class": "is-image-right",
+  "img": "/assets/imgs/american-apparel-logo.png",
+  "title": "Quality",
+  "copy": "<p>100% Fine Jersey cotton construction. The softest, smoothest, best-looking T-shirt available anywhere.</p><p>Made of 100% fine ring-spun combed cotton, this lightweight fine jersey is exceptionally smooth and tight-knit.</p>"
+}'}}
+{{> product-attr }}
+{{/parseJSON}}
+  </div>
+</div>
+
 
 <!-- product recommendations -->

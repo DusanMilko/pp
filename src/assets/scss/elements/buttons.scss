@@ -49,8 +49,8 @@
     &.button--to-filled-color {
       &:hover {
         color: $white;
-        border-color: $docs-color;
-        background: $docs-color;
+        border-color: $primary;
+        background: $primary;
       }
     }
   }
@@ -58,28 +58,28 @@
   &.button--to-filled-color {
     &:hover {
       color: $white;
-      border-color: $docs-color;
-      background: $docs-color;
+      border-color: $primary;
+      background: $primary;
     }
   }
 }
 
 .button--color {
-  border-color: $docs-color;
-  color: $docs-color;
+  border-color: $primary;
+  color: $primary;
 
   &:hover {
-    background: $docs-color;
+    background: $primary;
     color: $white;
   }
 
   &.button--filled {
-    background: $docs-color;
+    background: $primary;
     color: $white;
 
     &:hover {
-      border-color: scale-color($docs-color, $lightness: -30%);
-      background: scale-color($docs-color, $lightness: -30%);
+      border-color: scale-color($primary, $lightness: -30%);
+      background: scale-color($primary, $lightness: -30%);
     }
   }
 }

@@ -1,0 +1,42 @@
+.bg-oil {
+  background-color: $oil;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-fone {
+  background-color: #f1f1f1;
+}
+
+.bg-orange {
+  background-color: #D38D5A;
+}
+
+.bg-green {
+  background-color: #68f3ad;
+}
+
+.bg-green-black {
+  background: linear-gradient( to right, #68f3ad, #68f3ad 50%, #000 50%);
+}
+
+// BG images
+
+.bg-sizechart {
+  //background-image: url(/assets/imgs/size-chart.jpg);
+  background-position: left center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+// Colors
+
+.color-white {
+  color: $white;
+}

@@ -1,13 +1,15 @@
-<div class="m_product-attr xsmall-24 medium-12 fleft">
-  <div class="product-attr__image">
-    <img src="{{img}}" />
+<div class="m_product-attr xsmall-24 {{#if type}}medium-12{{else}}medium-24{{/if}} {{extra-class}} fleft">
+  {{#if img}}
+  <div class="product-attr__image-cont xsmall-24 medium-10">
+    <img class="product-attr__image center" src="{{img}}" />
   </div>
-  <div class="product-attr__content">
+  {{/if}}
+  <div class="product-attr__content xsmall-24 {{#if img}}medium-14{{else}}{{/if}} column">
     <h4 class="product-attr__title">
       {{title}}
     </h4>
-    <p class="product-attr__copy">
-      {{copy}}
-    </p>
+    <div class="product-attr__copy">
+      {{{copy}}}
+    </div>
   </div>
 </div>
