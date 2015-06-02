@@ -45,6 +45,13 @@ $block-grid-media-queries: true !default;
       margin: 0;
     } @else {
       margin: 0 (-$spacing/2);
+
+      &.large-gutter {
+        margin: 0 (-$spacing);
+      }
+      &.xlarge-gutter {
+        margin: 0 (-$spacing*2);
+      }
     }
     @include clearfix;
 
@@ -54,6 +61,24 @@ $block-grid-media-queries: true !default;
       height: auto;
       @if $include-spacing {
         padding: 0 ($spacing/2) $spacing;
+      }
+    }
+
+    // Gutters
+    &.small-gutter >li {
+      @if $include-spacing {
+        padding: 0 ($spacing/4) ($spacing/2);
+      }
+    }
+
+    &.large-gutter >li {
+      @if $include-spacing {
+        padding: 0 ($spacing) ($spacing);
+      }
+    }
+    &.xlarge-gutter >li {
+      @if $include-spacing {
+        padding: 0 ($spacing*2) ($spacing);
       }
     }
   }
@@ -70,6 +95,48 @@ $block-grid-media-queries: true !default;
       &:nth-of-type(#{$per-row}n+1) { clear: both; }
       @if $align-block-grid-to-grid {
         @include block-grid-aligned($per-row, $spacing);
+      }
+    }
+
+    // Gutters
+    &.small-gutter >li {
+      list-style: none;
+      @if $include-spacing {
+        padding: 0 ($spacing/4) ($spacing/2);
+      }
+      width: 100%/$per-row;
+
+      &:nth-of-type(1n) { clear: none; }
+      &:nth-of-type(#{$per-row}n+1) { clear: both; }
+      @if $align-block-grid-to-grid {
+        @include block-grid-aligned($per-row, ($spacing/2));
+      }
+    }
+
+    &.large-gutter >li {
+      list-style: none;
+      @if $include-spacing {
+        padding: 0 ($spacing/1) ($spacing);
+      }
+      width: 100%/$per-row;
+
+      &:nth-of-type(1n) { clear: none; }
+      &:nth-of-type(#{$per-row}n+1) { clear: both; }
+      @if $align-block-grid-to-grid {
+        @include block-grid-aligned($per-row, ($spacing));
+      }
+    }
+    &.xlarge-gutter >li {
+      list-style: none;
+      @if $include-spacing {
+        padding: 0 ($spacing*2) ($spacing);
+      }
+      width: 100%/$per-row;
+
+      &:nth-of-type(1n) { clear: none; }
+      &:nth-of-type(#{$per-row}n+1) { clear: both; }
+      @if $align-block-grid-to-grid {
+        @include block-grid-aligned($per-row, ($spacing));
       }
     }
   }

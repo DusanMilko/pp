@@ -1,0 +1,76 @@
+.mailing-list {
+  width: 100%;
+  float: left;
+  padding: 8px;
+  background: #ed7f69;
+
+  p {
+    color: $white;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    padding: 0px 10px 0;
+    text-align: center;
+    margin: 0px auto 0;
+    line-height: 1em;
+
+    @media #{$medium-up}{
+      display: block;
+      float: left;
+      text-align: left;
+      width: 100%;
+    }
+
+    strong {
+      float: left;
+      width: 100%;
+      font-size: 19px;
+    }
+  }
+
+  .mailing-list__title {
+    width: 100%;
+    float: left;
+    display: block;
+    padding: 6px 0 8px;
+
+    @media #{$medium-up}{
+      width: 270px;
+    }
+  }
+
+  .mailing-email {
+    border: 0px;
+    color: $white;
+    padding: 0 20px;
+    outline: none;
+    float: none;
+    display: inline-block;
+
+    &::-webkit-input-placeholder { 
+      color: $white;
+    }
+    &:-moz-placeholder { 
+      color: $white;
+    }
+    &::-moz-placeholder { 
+      color: $white;
+    }
+    &:-ms-input-placeholder { 
+      color: $white;
+    }
+  }
+
+  input {
+    border: 0px;
+    height: 40px;
+    background: #f09986;
+    float: left;
+  }
+
+  .button {
+    float: none;
+    display: inline-block;
+    color: $white;
+  }
+}

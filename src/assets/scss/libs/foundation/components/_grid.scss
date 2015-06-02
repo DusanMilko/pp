@@ -15,6 +15,9 @@ $total-columns: 12 !default;
 
 $last-child-float: $opposite-direction !default;
 
+$block-grid-default-spacing: rem-calc(20) !default;
+$spacing:$block-grid-default-spacing;
+
 //
 // Grid Functions
 //
@@ -220,6 +223,22 @@ $last-child-float: $opposite-direction !default;
 				@include grid-column;
 			}
 		}
+
+    // Gutters
+    &.small-gutter {
+      > .column,
+      > .columns {
+        padding: ($column-gutter / 4);
+      }
+    }
+    &.large-gutter {
+      padding-left: $spacing/2;
+      padding-right: $spacing/2;
+    }
+    &.xlarge-gutter {
+      padding-left: $spacing*2;
+      padding-right: $spacing*2;
+    }
 	}
 }
 
