@@ -1,5 +1,5 @@
 .m_product {
-  
+
 }
 
 .product__image {
@@ -159,5 +159,27 @@
         }
       }
     }
+  }
+}
+
+.product__rewardshare {
+  background: $gainsboro;
+  padding: 10px;
+  float: left;
+  width: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+
+  h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  input {
+    width: 100%;
+    border: 0;
+    padding: 10px;
   }
 }
