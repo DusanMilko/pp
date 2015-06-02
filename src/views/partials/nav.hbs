@@ -1,39 +1,39 @@
 <div class="navigation">
+  <div class="row">
+    <a href="#!" class="burger-menu js-hamburger">
+      <div class="buns">
+        <span class="first"></span>
+        <span class="middle"></span>
+        <span class="last"></span>
+        <span class="text">MENU</span>
+      </div>
+    </a>
 
-  <a href="#!" class="burger-menu js-hamburger">
-    <div class="buns">
-      <span class="first"></span>
-      <span class="middle"></span>
-      <span class="last"></span>
-      <span class="text">MENU</span>
+    <a href="/" class="nav-logo">
+      <img src="http://panicpop.com/images/logo.gif"/><h1>PANICPOP</h1>
+    </a>
+
+    <ul class="main-nav js-hamburger-cont">
+      <li {{#is active "shop"}}is-active{{/is}}>
+        <a href="#!">Shop</a>
+      </li>
+      <li {{#is active "games"}}is-active{{/is}}>
+        <a href="#!">Games</a>
+      </li>
+      <li {{#is active "partner"}}is-active{{/is}}>
+        <a href="#!">Partner</a>
+      </li>
+    </ul>
+
+    <div class="nav-extra-cont">
+      <a href="#!" class="nav-accounts-mobile hide-for-small-up"><i class="icon fi-torso"></i><span>Account</span></a>
+      <div class="nav-accounts show-for-small-up">
+        <a href="#!" class="">Login</a> or <a href="#!">Sign-Up</a>
+      </div>
+
+      <a href="#!" class="nav-cart"><i class="icon fi-shopping-cart"></i><span>Cart</span></a>
     </div>
-  </a>
-
-  <a href="/" class="nav-logo">
-    <img src="http://panicpop.com/images/logo.gif"/><h1>PANICPOP</h1>
-  </a>
-
-  <ul class="main-nav">
-    <li {{#is active "shop"}}is-active{{/is}}>
-      <a href="#!">Shop</a>
-    </li>
-    <li {{#is active "games"}}is-active{{/is}}>
-      <a href="#!">Games</a>
-    </li>
-    <li {{#is active "partner"}}is-active{{/is}}>
-      <a href="#!">Partner</a>
-    </li>
-  </ul>
-
-  <div class="fright">
-    <a href="#!" class="nav-accounts-mobile hide-for-small-up"><i class="icon fi-torso"></i><span>Account</span></a>
-    <div class="nav-accounts show-for-small-up">
-      <a href="#!" class="">Login</a> or <a href="#!">Sign-Up</a>
-    </div>
-
-    <a href="#!" class="nav-cart"><i class="icon fi-shopping-cart"></i><span>Cart</span></a>
   </div>
-
 </div>
 
 

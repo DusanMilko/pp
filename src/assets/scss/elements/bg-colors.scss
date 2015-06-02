@@ -19,11 +19,11 @@
 }
 
 .bg-green {
-  background-color: #68f3ad;
+  background-color: $secondary;
 }
 
 .bg-green-black {
-  background: linear-gradient( to right, #68f3ad, #68f3ad 50%, #000 50%);
+  background: linear-gradient( to right, $secondary, $secondary 50%, #000 50%);
 }
 
 // BG images
