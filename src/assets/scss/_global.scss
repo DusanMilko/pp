@@ -201,4 +201,8 @@ a {
 .container {
   width: 100%;
   float: left;
+
+  &.is-padded {
+    padding: 15px;
+  }
 }

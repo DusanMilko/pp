@@ -19,7 +19,7 @@ title: Product
       </div>
       <div class="product__content xsmall-24 medium-12">
         <h1 class="product__title">
-          Buy A Ward
+          Thug Hug
         </h1>
         <div class="product__price">
           $17.99
@@ -51,16 +51,32 @@ title: Product
           <a href="#!" class="button button--color button--filled xsmall-24 center">Add To Cart</a>
         </div>
 
-        <div class="product__rewardshare xsmall-24">
-          <p>
-            <h4>Share this url and pay less!!</h4>
-            <span>For every person that just visits your link the price will lower by 5%, maxing out at 20%.</span>
-          </p>
-          <input class="xsmall-24" value="http://url.com/product?share=g45hj2" disabled />
+        <div class="product__rewardshare xsmall-24 show-for-large-up">
+
+          <h4>Share this url and pay less!!</h4>
+          <p>For every person that just visits your link the price will lower by 5%, maxing out at 20%.</p>
+
+          <div class="xsmall-24 fleft rel">
+            <input class="xsmall-24" onClick="this.setSelectionRange(0, this.value.length)" value="http://url.com/product?share=g45hj2" readonly />
+
+            <button id="copy-button" class="button button--small button--filled" data-clipboard-text="http://url.com/product?share=g45hj2" title="Click to copy">Copy</button>
+          </div>
         </div>
       </div>
     </div>
 
+  </div>
+</div>
+
+<div class="container is-padded hide-for-large-up">
+  <div class="product__rewardshare is-relative xsmall-24 hide-for-large-up">
+
+    <h4>Share this url and pay less!!</h4>
+    <p>For every person that just visits your link the price will lower by 5%, maxing out at 20%.</p>
+
+    <div class="xsmall-24 fleft rel">
+      <input class="xsmall-24" onClick="this.setSelectionRange(0, this.value.length)" value="http://url.com/product?share=g45hj2" readonly />
+    </div>
   </div>
 </div>
 
@@ -71,7 +87,7 @@ title: Product
   "extra-class": "bg-green",
   "type": "half",
   "title": "Description",
-  "copy": "<p>An important lesson for League of Legends is \"buy a ward save a life\"! But noobs don\'t know, make sure they learn.</p>"
+  "copy": "<p>You can\'t spell THUG without HUG &lt;3. Spread the love man.</p>"
 }'}}
 {{> product-attr }}
 {{/parseJSON}}

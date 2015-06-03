@@ -67,13 +67,14 @@
 }
 
 .product__content {
-  padding: 10px 30px 40px;
+  padding: 10px 30px 25px;
   max-width: 450px;
   margin: 0 auto;
   display: table;
+  position: relative;
 
-  @media #{$medium-up}{
-    padding: 20px 30px;
+  @media #{$large-up}{
+    padding: 20px 30px 195px;
     float: left;
   }
 }
@@ -97,7 +98,7 @@
 
   @media #{$medium-up}{
     font-size: 30px;
-    margin: 20px 0 5px; 
+    margin: 10px 0 5px; 
   }
 }
 
@@ -163,23 +164,56 @@
 }
 
 .product__rewardshare {
-  background: $gainsboro;
-  padding: 10px;
+  background-color: $gainsboro;
+  background-image: url('/assets/imgs/seamless_paper_texture.png');
+  padding: 15px;
   float: left;
-  width: 50%;
-  position: absolute;
-  bottom: 20px;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
   right: 0;
+  margin-top: 0px;
+  border: 3px dashed $jumbo;
+
+  @media #{$medium-up}{
+    position: absolute;
+    margin-top: 0px;
+  }
+
+  &.is-relative {
+    position: relative;
+
+    @media #{$medium-up}{
+      position: relative;
+    }
+  }
+  
 
   h4 {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 0;
+    color: #F56B4E;
+
+    @media #{$medium-up}{
+      font-size: 20px;
+    }
   }
 
   input {
     width: 100%;
     border: 0;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
+
+    @media #{$medium-up}{
+      padding: 10px 90px 10px 10px;
+    }
+  }
+
+  #copy-button {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

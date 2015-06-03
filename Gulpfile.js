@@ -148,6 +148,13 @@ gulp.task('js', function() {
             depends: {
                 jQuery: '$'
             }
+        },
+        'ZeroClipboard': {
+            path: 'src/assets/js/libs/ZeroClipboard.js',
+            exports: 'ZeroClipboard',
+            depends: {
+                jQuery: '$'
+            }
         }
       }
     }))
