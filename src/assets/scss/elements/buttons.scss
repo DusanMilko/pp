@@ -83,3 +83,44 @@
     }
   }
 }
+
+
+// Button Ripple
+
+.ripplelink {
+  position:relative;
+  overflow:hidden;
+  transition: all 0.2s ease;
+  z-index:0;
+
+  &:hover{
+    z-index:1;
+    box-shadow:rgba(0, 0, 0, 0.15) 0 3px 3px 0;
+  }
+}
+
+.ripple-ink {
+  display: block;
+  position: absolute;
+  background:rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  transform:scale(0);
+}
+
+.ripple-animate {
+  animation:ripple 0.65s linear;
+}
+
+/*
+@-webkit-keyframes ripple {
+    100% {opacity: 0; -webkit-transform: scale(2.5);}
+}
+@-moz-keyframes ripple {
+    100% {opacity: 0; -moz-transform: scale(2.5);}
+}
+@-o-keyframes ripple {
+    100% {opacity: 0; -o-transform: scale(2.5);}
+}*/
+@keyframes ripple {
+    100% {opacity: 0; transform: scale(2.5);}
+}
