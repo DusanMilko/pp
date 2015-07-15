@@ -434,7 +434,7 @@
   .main-nav {
     height: 100vh;
 
-    @media #{$medium-up}{
+    @media #{$large-up}{
       height: 50px;
     }
   }
