@@ -1,5 +1,9 @@
 .m_instagram-feed {
-  padding: 40px 0;
+  padding: 10px 10px;
+
+  @media #{$medium-up}{
+    padding: 40px 20px;
+  }
 
   li {
     position: relative;
