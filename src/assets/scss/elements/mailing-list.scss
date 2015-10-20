@@ -1,8 +1,7 @@
 .mailing-list {
   width: 100%;
   float: left;
-  padding: 8px;
-  background: #ed7f69;
+  padding: 14px;
 
   p {
     color: $white;
@@ -13,6 +12,7 @@
     text-align: center;
     margin: 0px auto 0;
     line-height: 1em;
+    font-weight: 400;
 
     @media #{$medium-up}{
       display: block;
@@ -25,6 +25,8 @@
       float: left;
       width: 100%;
       font-size: 19px;
+      font-weight: 600;
+      line-height: 1.1em;
     }
   }
 
@@ -32,46 +34,54 @@
     width: 100%;
     float: left;
     display: block;
-    padding: 6px 0 8px;
+    padding: 3px 0 3px;
 
     @media #{$medium-up}{
       width: 270px;
-      padding: 6px 0 5px;
+      padding: 3px 0 3px;
     }
   }
 
   .mailing-email {
     border: 0px;
-    color: $white;
+    color: $oil;
     padding: 0 20px;
     outline: none;
     float: none;
     display: inline-block;
 
     &::-webkit-input-placeholder { 
-      color: $white;
+      color: $oil;
     }
     &:-moz-placeholder { 
-      color: $white;
+      color: $oil;
     }
     &::-moz-placeholder { 
-      color: $white;
+      color: $oil;
     }
     &:-ms-input-placeholder { 
-      color: $white;
+      color: $oil;
     }
   }
 
   input {
     border: 0px;
     height: 40px;
-    background: #f09986;
     float: left;
+  }
+
+  .mailing-email {
+    background: $white;
   }
 
   .button {
     float: none;
     display: inline-block;
-    color: $white;
+    //color: $oil;
+    font-weight: 400;
+
+    &:hover {
+      //color: $white;
+    }
   }
 }

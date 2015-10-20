@@ -8,3 +8,4 @@ var on_scroll = require('./app/on-scroll')();
 var product_option = require('./app/product-option')();
 var docs_side_nav = require('./app/docs-side-nav')();
 var button_ripple = require('./app/button-ripple')();
+var fittext = require('./app/fittext')();

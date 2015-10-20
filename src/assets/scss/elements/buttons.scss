@@ -19,6 +19,16 @@
     color: $white;
   }
 
+  &.button--white {
+    border: 2px solid $white;
+    color: $white;
+
+    &:hover {
+      background: $white;
+      color: $oil;
+    }
+  }
+
   // Sizes
   &.button--xsmall {
     font-size: 10px;
@@ -78,8 +88,8 @@
     color: $white;
 
     &:hover {
-      border-color: scale-color($primary, $lightness: -30%);
-      background: scale-color($primary, $lightness: -30%);
+      border-color: scale-color($primary, $lightness: -15%);
+      background: scale-color($primary, $lightness: -15%);
     }
   }
 }

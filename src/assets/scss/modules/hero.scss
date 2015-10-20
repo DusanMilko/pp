@@ -1,0 +1,26 @@
+.m_hero {
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero_content {
+  width: 100%;
+  padding: 60px 0;
+
+  .button {
+    margin: 10px auto;
+    clear: both;
+    display: table;
+  }
+
+}
+
+.hero_title {
+  margin: 0 auto;
+  color: $white;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 120px;
+}

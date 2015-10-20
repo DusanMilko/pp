@@ -26,6 +26,10 @@
   background: linear-gradient( to right, $secondary, $secondary 50%, #000 50%);
 }
 
+.bg-secondary {
+  background-color: $secondary;
+}
+
 // BG images
 
 .bg-sizechart {
@@ -33,6 +37,14 @@
   background-position: left center;
   background-size: auto 100%;
   background-repeat: no-repeat;
+}
+
+.bg-pattern {
+  background-image: url(/assets/imgs/bgs/pattern.jpg);
+}
+
+.bg-space {
+  background-image: url(/assets/imgs/bgs/stardust.png);
 }
 
 // Colors

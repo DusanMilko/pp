@@ -3,7 +3,52 @@ layout: default
 title: Document
 ---
 
-{{site.title}}
+{{#parseJSON '{
+  "extra-class": "",
+  "img": "http://il4.picdn.net/shutterstock/videos/11667416/thumb/11.jpg",
+  "title": "Limitless",
+  "title-font": "akula",
+  "button": "true",
+  "button-text": "Shop",
+  "button-link": "#!"
+}'}}
+{{> hero }}
+{{/parseJSON}}
+
+{{>newsletter}}
+
+{{#parseJSON '{
+  "module-class": "bg-white",
+  "extra-class": "",
+  "img": "https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/e35/10948903_1463753383946537_579682489_n.jpg",
+  "img-class": "fleft",
+  "content-class": "fleft",
+  "title": "New",
+  "copy": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
+  "button": "true",
+  "button-text": "Shop",
+  "button-link": "#!"
+}'}}
+{{> shout }}
+{{/parseJSON}}
+
+{{#parseJSON '{
+  "module-class": "bg-secondary trapezoid-right-large",
+  "extra-class": "is-white",
+  "img": "https://scontent-iad3-1.cdninstagram.com/hphotos-xfa1/t51.2885-15/e35/11356775_1617349545213216_1111025595_n.jpg",
+  "img-class": "fright",
+  "content-class": "fright",
+  "title": "Sale",
+  "copy": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy.",
+  "button": "true",
+  "button-text": "Shop",
+  "button-link": "#!",
+  "button-class": "button--white"
+}'}}
+{{> shout }}
+{{/parseJSON}}
+
+{{> instagram-feed }}
 
 <div class="js-div a"></div>
 
