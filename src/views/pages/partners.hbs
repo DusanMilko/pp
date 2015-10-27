@@ -1,0 +1,30 @@
+---
+layout: default
+title: Document
+---
+
+<div class="module">
+  <h2>Partners blah</h2>
+  <p>
+    Partners blah blah
+  </p>
+  <a href="mailto:">example@example.com</a>
+  <p>
+    Ending blah blah
+  </p>
+</div>
+
+<div class="module">
+  <ul class="xsmall-block-grid-1 small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+    <li>
+      {{#parseJSON '{
+        "extra-class": "",
+        "img": "https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/e35/10948903_1463753383946537_579682489_n.jpg",
+        "title": "username",
+        "link": "link"
+      }'}}
+      {{> partner }}
+      {{/parseJSON}}
+    </li>
+  </ul>
+</div>
