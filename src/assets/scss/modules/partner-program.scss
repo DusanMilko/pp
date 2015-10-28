@@ -1,0 +1,30 @@
+.m_partner-program {
+  text-align: left;
+  padding: 20px 10% 40px 0;
+  border-bottom: 1px solid $gainsboro;
+  max-width: 600px;
+  margin: 0 auto 40px;
+
+  p {
+    font-family: $RobotoSlab;
+
+    span {
+      font-family: $Roboto;
+      font-weight: 600;
+      width: 100%;
+    }
+  }
+
+  a {
+    color: $black;
+  }
+}
+
+.partner-program__title {
+  font-family: $RobotoCond;
+}
+
+.partner-program__sub-copy {
+  font-size: 13px;
+  color: $monsoon;
+}

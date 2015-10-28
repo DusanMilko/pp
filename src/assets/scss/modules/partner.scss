@@ -5,10 +5,35 @@
 
 .partner__title {
   float: left;
+  text-transform: lowercase;
+
+  a {
+    color: #125688;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 0 0 10px;
+  }
 }
 
 .partner__follow {
   float: right;
+  color: #4090db;
+  border: 1px solid #4090db;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5px 9px 5px 9px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin: 11px 10px 5px 0px;
+
+  &:hover {
+    color: #125688;
+    border-color: #125688;
+  }
 }
 
 .partner__img {

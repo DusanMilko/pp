@@ -3,28 +3,107 @@ layout: default
 title: Document
 ---
 
-<div class="module">
-  <h2>Partners blah</h2>
-  <p>
-    Partners blah blah
-  </p>
-  <a href="mailto:">example@example.com</a>
-  <p>
-    Ending blah blah
-  </p>
+{{#parseJSON '{
+  "extra-class": "",
+  "img": "http://il4.picdn.net/shutterstock/videos/11667416/thumb/11.jpg",
+  "title": "&#32;",
+  "title-font": "akula"
+}'}}
+{{> hero }}
+{{/parseJSON}}
+
+<div class="module bg-white">
+  <div class="row">
+    <div class="m_partner-program">
+      <h2 class="partner-program__title">Panicpop Partners Program</h2>
+      <p>
+        As a partner you get all the free merch you want! </br>Also you get featured on our social media and website. Just share pics of the free merch we send you!
+        <!--
+          As a partner of the program we work with you to spread awareness of you ... 
+        -->
+      </p>
+      <p>
+        <span>Requirements:</span>
+        </br>
+        10k followers on instagram or other social platform.
+      </p>
+      <p>
+        <span>Contact:</span>
+        </br>
+        <a href="mailto:partners@panicpop.com" title="mail to partners@panicpop.com">partners@panicpop.com</a>
+      </p>
+      <p class="partner-program__sub-copy">
+        Title the Email "Let's Partner" and include a link to your instagram or other social platform.
+      </p>
+    </div>
+  </div>
 </div>
 
-<div class="module">
-  <ul class="xsmall-block-grid-1 small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-    <li>
-      {{#parseJSON '{
-        "extra-class": "",
-        "img": "https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/e35/10948903_1463753383946537_579682489_n.jpg",
-        "title": "username",
-        "link": "link"
-      }'}}
-      {{> partner }}
-      {{/parseJSON}}
-    </li>
-  </ul>
+<div class="module bg-white">
+  <div class="row">
+    <div class="column">
+      <ul class="xsmall-block-grid-1 small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+        <li>
+          {{#parseJSON '{
+            "extra-class": "",
+            "img": "https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/e35/10948903_1463753383946537_579682489_n.jpg",
+            "title": "jamesbond",
+            "link": "link"
+          }'}}
+          {{> partner }}
+          {{/parseJSON}}
+        </li>
+        <li>
+          {{#parseJSON '{
+            "extra-class": "",
+            "img": "https://scontent-iad3-1.cdninstagram.com/hphotos-xfa1/t51.2885-15/e35/11356775_1617349545213216_1111025595_n.jpg",
+            "title": "dexter",
+            "link": "link"
+          }'}}
+          {{> partner }}
+          {{/parseJSON}}
+        </li>
+        <li>
+          {{#parseJSON '{
+            "extra-class": "",
+            "img": "https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/e35/10948903_1463753383946537_579682489_n.jpg",
+            "title": "naruto",
+            "link": "link"
+          }'}}
+          {{> partner }}
+          {{/parseJSON}}
+        </li>
+        <li>
+          {{#parseJSON '{
+            "extra-class": "",
+            "img": "https://scontent-iad3-1.cdninstagram.com/hphotos-xfa1/t51.2885-15/e35/11356775_1617349545213216_1111025595_n.jpg",
+            "title": "luffy",
+            "link": "link"
+          }'}}
+          {{> partner }}
+          {{/parseJSON}}
+        </li>
+        <li>
+          {{#parseJSON '{
+            "extra-class": "",
+            "img": "https://scontent-iad3-1.cdninstagram.com/hphotos-xfa1/t51.2885-15/e35/11356775_1617349545213216_1111025595_n.jpg",
+            "title": "goku",
+            "link": "link"
+          }'}}
+          {{> partner }}
+          {{/parseJSON}}
+        </li>
+        <li>
+          {{#parseJSON '{
+            "extra-class": "",
+            "img": "https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/e35/10948903_1463753383946537_579682489_n.jpg",
+            "title": "bubbles",
+            "link": "link"
+          }'}}
+          {{> partner }}
+          {{/parseJSON}}
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
