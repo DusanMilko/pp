@@ -24,6 +24,10 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+
+  a:hover {
+    color: $white;
+  }
 }
 
 .instagram-feed__hashtag {
@@ -57,4 +61,18 @@
     height: 100%;
     background: linear-gradient(145deg, #3e1d24, #47335f);
   }
+}
+
+.instagram-feed__img-link {
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+}
+
+.instagram-feed__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
